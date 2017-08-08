@@ -1,7 +1,7 @@
 # Apollo-Whitepaper
 Apollo's living whitepaper and Business POA --
 
-##Preamble
+## Preamble
 
 This paper has been prepared by the Apollo DAE team and may be updated as needed. Most topics discussed in this paper may change over time or become irrelevant as technology, business and trading evolves.
 
