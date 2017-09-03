@@ -1,6 +1,8 @@
 # Apollo-Whitepaper
 Apollo's living whitepaper and Business POA --
 
+[Review our updated and shortened white paper version - Click Here](https://goo.gl/MG6YLg "Apollo's White paper")
+
 ## Preamble
 
 This paper has been prepared by the Apollo DAE team and may be updated as needed. Most topics discussed in this paper may change over time or become irrelevant as technology, business and trading evolves.
@@ -185,6 +187,8 @@ For example: A user tries crashing Bitcoin&#39;s price on a specific exchange. T
 That&#39;s what happens on other exchanges, but this won&#39;t happen on Apollo. Using the same setup, he tries crashing the price on Apollo, but, instead, he sells his Bitcoin for an effective rate of ~$4250 per Bitcoin and the market didn&#39;t move, except maybe 1%.
 
 So what happened? Our system flagged the trade (or trades), processed it as usual at whatever price it would have been filled if it was released on the open market, but filled the orders against Apollo&#39;s funds. Then Apollo sold a small percentage of the Bitcoin on Apollo and other connected exchanges over a few seconds to a few minutes to reduce a market fluctuation and Apollo&#39;s exposure. Eventually all of the bitcoins were sold off slowly, preventing a flash crash. Again, it is more complex than this.
+
+We will also be monitoring the an assets index price based on multiple exchanges, and use the index value to determine if a margin call or stop loss should be enacted and a position liquidated.  This alone should stop most all flash crashes. We provide the best flash protection by combining our ability to spread orders over multiple exchanges and using index pricing.
 
 And to be clear, this will not stop an asset&#39;s price from rising or dropping more than 5% in minutes if all exchanges are seeing the assets price drop or rise. Our market crash system will only detect massive orders executed within seconds of one another and monitor all the other exchanges&#39; prices simultaneously. If, on other exchanges, the asset&#39;s price does drop past 5 - 20% at the same time the user mentioned in the example above sells, then their order will be allowed to fill. The only thing our system does is to insure an asset&#39;s price stays within 5 - 20% of the total market average since we believe anything more or less would be a manipulation attempt. If the overall market price does drop past 5, 10, 20, and 50% very quickly, it most likely is a massive market manipulation attempt, but it could also be a mass panic sell due to an underlying problem of the asset in question. The asset could also be part of a massive pump and dump scheme, in which case there is not much that we could do. Because of this, we will not allow assets that we believe are fundamentally flawed or could be party to pump and dumps, to be traded on Apollo.
 
